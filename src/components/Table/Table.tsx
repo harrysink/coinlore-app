@@ -4,7 +4,6 @@ import { defaultData } from "../data/data";
 
 const Table = () => {
     const [data, setData] = useState<defaultData[]>([]);
-    const [page, setPage] = useState(0);
     
     useEffect(() => {
         const apiUrl = 'https://api.coinlore.net/api/tickers/'
