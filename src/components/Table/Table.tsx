@@ -53,7 +53,7 @@ const Table = () => {
 
     return (
         <div className="justify-items-center items-center w-[100%]">
-            <table className="border text-left shadow-lg mt-20 mb-20 w-[60%]">
+            <table className="border text-left shadow-lg mt-20 mb-20 mx-auto w-[95%] text-sm">
                 <thead>
                     {table.getHeaderGroups().map(headerGroup => (
                         <tr key={headerGroup.id}>
@@ -82,9 +82,9 @@ const Table = () => {
                     ))}
                 </tbody>
                 {/* pagination buttons */}
-                <div className="flex justify-between">
+                <div className="flex justify-between relative">
                     <button
-                        className="font-bold p-3 pt-2 pb-2 pl-4 pr-4 top-0" 
+                        className="font-bold p-3 pt-2 pb-2 pl-4 pr-4" 
                         onClick={() => table.previousPage()}
                         disabled={!table.getCanPreviousPage()}
                         hidden={!table.getCanPreviousPage()}
@@ -92,7 +92,7 @@ const Table = () => {
                         Previous
                     </button>
                     <button 
-                        className="font-bold p-3 pt-2 pb-2 pl-4 pr-4 top-0" 
+                        className="font-bold p-3 pt-2 pb-2 pl-4 pr-4" 
                         onClick={() => table.nextPage()}
                         disabled={!table.getCanNextPage()}
                         hidden={!table.getCanNextPage()}
