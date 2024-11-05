@@ -54,7 +54,7 @@ const Table = () => {
     return (
         <div className="justify-items-center items-center w-[100%]">
             <table className="border text-left shadow-lg mt-20 mb-20 mx-auto w-[95%] text-sm">
-                <thead className="md:block">
+                <thead>
                     {table.getHeaderGroups().map(headerGroup => (
                         <tr key={headerGroup.id}>
                             {headerGroup.headers.map(header => (
