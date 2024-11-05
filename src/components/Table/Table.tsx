@@ -82,9 +82,9 @@ const Table = () => {
                     ))}
                 </tbody>
                 {/* pagination buttons */}
-                <div className="flex w-full relative ">
+                <div className="flex w-full relative px-4">
                     <button
-                        className="font-bold pt-2 pb-2 pr-4 w-[50%]" 
+                        className="font-bold pt-2 pb-2 pr-4" 
                         onClick={() => table.previousPage()}
                         disabled={!table.getCanPreviousPage()}
                         hidden={!table.getCanPreviousPage()}
@@ -92,7 +92,7 @@ const Table = () => {
                         Previous
                     </button>
                     <button 
-                        className="font-bold pt-2 pb-2 pl-4 pr-4 w-[50%]" 
+                        className="font-bold pt-2 pb-2 pl-4 pr-4" 
                         onClick={() => table.nextPage()}
                         disabled={!table.getCanNextPage()}
                         hidden={!table.getCanNextPage()}
